@@ -1,6 +1,164 @@
 @import url("./common.css");
 body {
-  background-color: black;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: #000;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #000A3E, #000);
+  overflow: hidden;
+}
+.intro .text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-200%);
+  color: #fff;
+  -webkit-animation: logoani 0.7s 2s forwards cubic-bezier(0.12, 0.07, 0.25, 1.55);
+          animation: logoani 0.7s 2s forwards cubic-bezier(0.12, 0.07, 0.25, 1.55);
+}
+@-webkit-keyframes logoani {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+@keyframes logoani {
+  0% {
+    transform: translateX(-50%) translateY(-100%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
+  }
+}
+.intro .text > p {
+  font-size: 36px;
+  opacity: 0;
+  -webkit-animation: pani 0.3s 2.7s forwards linear;
+          animation: pani 0.3s 2.7s forwards linear;
+}
+.intro .text > p:nth-of-type(1) {
+  transform: translateX(-20%);
+}
+.intro .text > p:nth-of-type(2) {
+  text-align: right;
+}
+@-webkit-keyframes pani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.intro .img-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+.intro .img-wrap > img {
+  display: block;
+}
+.intro .img-wrap > img:nth-of-type(1) {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  -webkit-animation: ani1 0.5s forwards;
+          animation: ani1 0.5s forwards;
+  opacity: 0;
+}
+.intro .img-wrap > img:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  right: 12%;
+  z-index: 2;
+  -webkit-animation: ani1 0.5s 0.5s forwards linear;
+          animation: ani1 0.5s 0.5s forwards linear;
+  opacity: 0;
+}
+.intro .img-wrap > img:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  right: -10%;
+  z-index: 1;
+  -webkit-animation: ani1 0.5s 1s forwards linear;
+          animation: ani1 0.5s 1s forwards linear;
+  opacity: 0;
+}
+.intro .img-wrap > img:nth-of-type(4) {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  left: 8%;
+  -webkit-animation: ani1 0.5s 0.5s forwards linear;
+          animation: ani1 0.5s 0.5s forwards linear;
+  opacity: 0;
+}
+.intro .img-wrap > img:nth-of-type(5) {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: 1;
+  -webkit-animation: ani1 0.5s 1s forwards linear;
+          animation: ani1 0.5s 1s forwards linear;
+  opacity: 0;
+}
+.intro .img-wrap > img:nth-of-type(6) {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  z-index: 0;
+  -webkit-animation: ani1 0.5s 1.5s forwards linear;
+          animation: ani1 0.5s 1.5s forwards linear;
+  opacity: 0;
+}
+@-webkit-keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 div.topmain {
@@ -64,7 +222,7 @@ div.onlysecond {
   margin-top: 130px;
   width: 100%;
   height: 100vh;
-  background-image: url(../image/index/secondpic.png);
+  background-image: url(../images/index/secondpic.png);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -205,5 +363,5 @@ div.webflexqna div.aqna a h2 {
   font-weight: 400;
 }
 div.webflexqna div.aqna a p {
-  display: none;
+  display: block;
 }/*# sourceMappingURL=index.css.map */
