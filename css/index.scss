@@ -1,0 +1,209 @@
+@import url('./common.css');
+
+
+body{background-color: black;}
+
+div.topmain{position: relative;}
+
+div.topmainim img:nth-child(1){width:100%;}
+
+div.logo{   
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top:40%;
+
+            
+        h1{ width:100%;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding: 20px;
+            margin:0 20px;
+        
+        }}
+            
+.loginbutton{
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:1%;
+        background-color: white;
+        border:none;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        .email{
+            width: 800px;
+            height: 80px;
+            border:none;
+            text-indent: 20px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #000;
+            font-size: 24px;
+            z-index: 999;
+        }
+        .btn{
+            border:none;
+            display: block;
+            padding:  0 50px;
+            border-radius: 15px;
+            background-color: #fffc00;
+            font-size: 22px;
+            color: #000;
+            font-weight:600;
+
+        
+        // input[type=text]{
+        //     width: 15%;
+        //     padding: 20px 400px;
+        //     border:none;
+        //     text-indent: 5px;
+        //     border-radius: 15px;
+        //     color:black;
+        // .btn{
+        //     border:1px solid yellow;
+        //     display: block;
+
+        // }}
+        
+        }
+    
+}
+
+div.onlysecond{
+        margin-top: 130px;
+        width:100%;
+        height: 100vh;
+        background-image: url(./img/index/secondpic.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position:relative;
+    div.color{
+        position:absolute;
+        
+        // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 7%, rgba(58,72,75,1) 16%, rgba(255,255,255,1) 70%);}
+        width:100%;
+        height: 100vh;
+        top:0;
+        left:0;
+        background: linear-gradient(to right,#000, rgba(0,0,0,0));
+        
+        // opacity: .4;
+        }
+
+    div.logoname{   
+            position: absolute;
+            color: white;
+            left: 10%;
+            bottom:20%;
+            
+            img{width: 560px;}
+            h1{ width:100%;
+                font-size: 50px;
+                font-weight: 400;
+                margin-bottom: 15px;}
+            div.parag{text-indent: 95px;}
+            h2{ margin-bottom: 20px;
+                font-size: 50px;
+                font-weight: 400;}
+            p{font-size: 20px;
+                font-weight: 400;}
+        }}
+
+div.recommend{
+            width:100%;
+            margin-top: 140px;
+            
+        div.recment{
+            width:100%;
+            text-align: center;
+            color: white;
+
+            h2{
+            width:100%;
+            font-size: 44px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            span{width:100%;
+                font-size: 44px;
+                font-weight: 400;
+                margin-bottom: 40px;
+                color: #fffc00;}
+            }
+       
+                
+            a{
+                width:100%;
+                color: rgb(143, 142, 142);
+                font-size: 15px;
+                font-weight: 400;
+                border:1px solid rgb(143, 142, 142);
+                border-radius: 15px;
+                padding: 4px 30px;
+                margin: 0 10px;
+            }
+}}
+
+div.firsttoonzip{
+        width:100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: flex-end;
+        margin-top: 66px;
+        
+        
+    p{color: rgb(143, 142, 142);
+    width:12.5%;
+    font-size: 18px;
+    text-align: center;}
+    img{width:87.5%}
+
+
+}
+
+div.contents{width:100%;
+            display: flex;
+            justify-content: space-between;
+            color: white;text-align: center;
+            margin:200px 0;
+            padding:0 100px;
+            
+            img{padding: 40px;}
+            p.titlef{padding:20px;
+              font-size: 20px;}
+            
+            }
+
+div.webflexqna{width:100%;
+                color: white;
+                margin-bottom: 300px;
+                
+                
+            h1{text-align: center;
+                font-size: 30px;
+                font-weight: 500;
+                }
+            div.aqna{margin-top: 100px;
+                    position: relative;
+                    padding:0 100px;
+                    }
+            div.aqna a {width:100%;
+                        color: white;
+                        border-bottom: 1px white solid;
+                        font-size:16px;
+                        display: block;
+                        padding:36px 0;
+                        text-indent: 20px;
+                    div.what{display: flex;
+                        justify-content: space-between;}
+                    
+                    h2{font-size: 20px;
+                        font-weight: 400;
+                        }
+                    p{display: none;}
+                   
+                    }
+            }
