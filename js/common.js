@@ -1,3 +1,8 @@
+
+
+
+
+
 // async function get_webtoonData(params) {
 //     const res = await fetch(`https://korea-webtoon-api.herokuapp.com/${params}`, {
 //         method: 'GET',
