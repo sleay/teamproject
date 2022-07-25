@@ -1,0 +1,93 @@
+@import url(./common.css);
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/loginbg.jpg);
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.6);
+    }
+    .login{
+        width: 500px;
+        height: 640px;
+        padding: 40px 50px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(0,0,0,0.7);
+        z-index: 1;
+        border-radius: 15px;
+
+        >p{
+            font-size: 40px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+        .inputwarp{
+            display: flex;
+            flex-direction: column;
+            >input{
+                width: 100%;
+                height: 60px;
+                margin-bottom: 20px;
+                border-radius: 15px;
+                border: none;
+                background-color: #3D3D3D;
+                text-indent: 20px;
+                color: #fff;
+
+            }
+            .submit{
+                border: solid 2px #fffc00;
+                background-color: #000;
+                color: #fff;
+                font-size: 20px;
+                margin-top: 30px;
+                text-indent: 0px;
+                cursor: pointer;
+            
+            }
+        }
+        .checkbox{
+            color: #fff;
+            display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+            >div{
+                display: flex;
+                align-items: center;
+                >input{
+                    width: 20px;
+                    height: 20px;
+                    background-color: #3D3D3D;
+                    transition: 0.3s;
+                    border-radius: 5px;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+                
+            }
+        }
+        .textbox{
+
+            text-align: right;
+            color: #fff;
+            >a{
+                color: #fff;
+                font-weight: 700;
+            }
+
+        }
+    }
+}
