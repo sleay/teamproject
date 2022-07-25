@@ -18,14 +18,21 @@ main > .nav > li {
   align-items: center;
   height: 14.2%;
   transition: 0.3s;
+  cursor: pointer;
+}
+main > .nav > li.active {
+  background-color: #fffc00;
+}
+main > .nav > li.active > span {
+  color: #000;
 }
 main > .nav > li:hover {
   background-color: #fffc00;
 }
-main > .nav > li:hover > a {
+main > .nav > li:hover > span {
   color: #000;
 }
-main > .nav > li > a {
+main > .nav > li > span {
   font-size: 30px;
   color: #fff;
   transition: 0.3s;
@@ -53,7 +60,6 @@ main section .list > ul > li {
   position: relative;
   width: 12.4%;
   height: 25.7vh;
-  background-color: aliceblue;
   overflow: hidden;
 }
 main section .list > ul > li > img {
