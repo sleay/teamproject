@@ -1,0 +1,107 @@
+@import url("./common.css");
+div.memberall {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/signupimages/loginbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+div.memberall div.imgcolor {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+div.membox {
+  width: 600px;
+  color: white;
+  height: 700px;
+  padding: 30px 80px;
+  background-color: #000;
+  border-radius: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.membox div.email p.email {
+  margin-bottom: 20px;
+  text-indent: 13px;
+}
+div.membox div.email input {
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #fffc00;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 20px 0px;
+  text-indent: 25px;
+  margin: 0 10px;
+}
+div.membox div.password p.passw {
+  margin-bottom: 20px;
+  text-indent: 13px;
+}
+div.membox div.password input {
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #fffc00;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 20px 0px;
+  text-indent: 25px;
+  margin: 0 10px;
+}
+div.membox .passwordt {
+  margin-top: 20px;
+}
+div.membox .passwordt input {
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #fffc00;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 20px 0px;
+  text-indent: 25px;
+  margin: 0 10px;
+}
+div.membox div.checkbox {
+  margin: 20px 0;
+}
+div.membox div.memberinbox {
+  width: 400px;
+  height: 100px;
+  font-size: 14px;
+  border: 1px solid rgb(59, 59, 59);
+  background-color: rgb(59, 59, 59);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+div.membox a.btn {
+  text-align: center;
+  width: 400px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #fffc00;
+  background-color: #fffc00;
+  border-radius: 15px;
+  padding: 12px 90px;
+  margin: 0 10px;
+}/*# sourceMappingURL=member.css.map */
