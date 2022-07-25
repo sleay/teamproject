@@ -1,0 +1,125 @@
+@import url('./common.css');
+
+div.signupall{
+    width:100%;
+    height: 100vh;
+    background-image: url(./images/signupimages/loginbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+
+div.imgcolor{
+    position:absolute;
+    // background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 7%, rgba(58,72,75,1) 16%, rgba(255,255,255,1) 70%);}
+    width:100%;
+    height: 100vh;
+    top:0;
+    left:0;
+    background: linear-gradient(to right,#000, rgba(0,0,0,0));
+    
+    // opacity: .4;
+    }
+}
+
+
+div.webbox{ 
+        width:720px;
+        height: 700px;
+        padding: 70px 80px;
+        background-color: #000;
+        z-index: 9999;
+       //border: 1px solid #000;
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       top:10%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+
+       
+    div.webflexfirst{
+        width: 100%;
+        color: white;
+        text-align: center;
+        
+        
+        p{width: 100%;
+        margin-bottom: 40px;}
+
+        a{ width:250px;
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            border:2px solid #fffc00;
+            border-radius: 15px;
+            padding: 12px 77px;
+            margin: 0 10px;
+    }}
+
+    div.enjoy{
+        
+        width:100%;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+        p{
+        }
+
+        a{ 
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            border:2px solid #fffc00;
+            border-radius: 15px;
+            padding: 12px 77px;
+            margin: 0 10px;
+    }}
+
+
+
+    div.money{
+        
+        width:100%;
+       
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+       
+       
+        
+        p{
+       
+       
+        }
+
+        a{ 
+            color: white;
+            font-size: 24px;
+            font-weight: 300;
+            border:2px solid #fffc00;
+            border-radius: 15px;
+            padding: 12px 70px;
+            margin: 0 10px;
+    }}
+    a.btn{
+        width:100%;
+        text-align: center;
+        width:250px;
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        border:2px solid #fffc00;
+        background-color: #fffc00;
+        border-radius: 15px;
+        padding: 12px 77px;
+        margin: 0 10px;}
+}
