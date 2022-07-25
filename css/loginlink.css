@@ -1,0 +1,94 @@
+@import url("../common.css");
+div.memberall {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/signupimages/loginbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+div.memberall div.imgcolor {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #000, rgba(0, 0, 0, 0));
+}
+
+div.middlebox {
+  width: 564px;
+  color: white;
+  height: 700px;
+  padding: 30px 80px;
+  background-color: #000;
+  border-radius: 12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.middlebox div.emaillogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+div.middlebox div.emaillogin p {
+  margin-bottom: 20px;
+}
+div.middlebox div.emaillogin input {
+  width: 400px;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  border: 1px solid #fffc00;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 20px 0px;
+  text-indent: 25px;
+  margin: 0 10px;
+}
+div.middlebox a.btnfull {
+  text-align: center;
+  width: 400px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #fffc00;
+  background-color: #fffc00;
+  border-radius: 15px;
+  padding: 12px 90px;
+  margin: 10px 10px;
+  margin-top: 20px;
+}
+div.middlebox .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+div.middlebox .box p.if {
+  margin-bottom: 15px;
+}
+div.middlebox .box a.btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  margin: 15px 10px;
+}
+div.middlebox .box p {
+  margin: 0 auto;
+}/*# sourceMappingURL=loginlink.css.map */
