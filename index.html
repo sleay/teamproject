@@ -6,22 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="./js/index.js"></script>
 
 
 </head>
 <body>
+<a href="#" class="login">
+    로그인
+</a>
+
+    <div class="intro">
+        <div class="text">
+            <p>오직</p>
+            <img src="./images/logo.png">
+            <p>오리지널 웹툰 시리즈</p>
+        </div>
+        <div class="img-wrap">
+            <img src="./images/intro/intro1.png">
+            <img src="./images/intro/intro2.png">
+            <img src="./images/intro/intro3.png">
+            <img src="./images/intro/intro4.png">
+            <img src="./images/intro/intro5.png">
+            <img src="./images/intro/intro6.png">
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function(){
+            $('.intro').fadeOut();
+            $('body').css({overflow:'auto'})
+        },4000,clearTimeout)
+    </script>
+
+
+
+
+
+
+
+
+
     <div class="topmain">
 
         <div class="topmainim">
-            <img src="./image/index/topmain.png" alt="main">
+            <img src="./images/index/topmain.png" alt="main">
         </div>
 
         <div class="alllmiddlemain">
 
             <div class="logo">
                 <h1>웹툰의 새로운 즐거움</h1>
-                <a href="#">
-                <img src="./image/logo.png"  alt="logo">
+                <a href="./main.html">
+                <img src="./images/logo.png"  alt="logo">
             </a>
             </div>
 
@@ -39,7 +76,7 @@
         </div>
             <div class="logoname">
         <h1>오직</h1>
-                <img src="./image/logo.png" alt="secondpic">
+                <img src="./images/logo.png" alt="secondpic">
                 <div class="parag">
 
                 <h2>오리지널 웹툰 시리즈</h2>
@@ -57,29 +94,35 @@
         <h2>내 취향에 맞는 <span>추천</span> 알고리즘</h2>
 
         <div class="acolor">
-        <a href="#">#SF</a>
-        <a href="#">#판타지</a>
-        <a href="#">#액션</a>
-        <a href="#">#로맨스</a>
-        <a href="#">#코미디</a></div>
+            <a href="#">#SF</a>
+            <a href="#">#판타지</a>
+            <a href="#">#액션</a>
+            <a href="#">#로맨스</a>
+            <a href="#">#코미디</a>
+        </div>
     </div>
     
-            <div class="firsttoonzip">
+            <div class="firsttoonzip a1">
                 <p>#판타지/로맨스</p>
-                <img src="./image/index/Group 3.png" alt="main">
+                <ul>
+                    
+                </ul>
             </div>
-            <div class="firsttoonzip">
-                <img src="./image/index/Group 2.png" alt="middle">
+            <div class="firsttoonzip a2">
+                <ul>
+
+                </ul>
                 <p>#일상/코미디</p>
             </div>
-            <div class="firsttoonzip">
+            <div class="firsttoonzip a3">
                 <p>#액션물/스릴러</p>
-                <img src="./image/index/Group 1.png" alt="last">
+                <ul>
+                </ul>
             </div>
     </div>
     <div class="contents">
         <div class="contentso">
-            <img src="./image/icon/icono.png" alt="">
+            <img src="./images/icon/icono.png" alt="">
             <p class="titlef">
             취향에 따라 골라보는 다양한 콘텐츠
             </p>
@@ -90,7 +133,7 @@
             </p>
         </div>
         <div class="contentss">
-            <img src="./image/icon/icons.png" alt="">
+            <img src="./images/icon/icons.png" alt="">
             <p class="titlef">
                 (주)webflex
             </p>
@@ -99,7 +142,7 @@
                 오직 webflex만 감상 가능한 웹툰을 즐겨보세요
         </div>
         <div class="contentst">
-            <img src="./image/icon/icont.png" alt="">
+            <img src="./images/icon/icont.png" alt="">
             <p class="titlef">
                 원하는 장면과, 원하는 웹툰
             </p>
@@ -116,36 +159,52 @@
             <h1>자주 묻는 질문</h1>
 
         <div class="aqna">
-            <a href="#" class="what">
+            <a href="#" class="What">
                 <div class="what">
-                <h2>WebFlex는 무엇인가요?</h2><img src="./image/icon/bottomarrow.png" alt=""></div>
-
-                <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
-                </a>
+                    <h2>WebFlex는 무엇인가요?</h2>
+                    <img src="./images/icon/bottomarrow.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
+                </div>
+            </a>
             <a href="#" class="is">
-                <div class="what"><h2>WebFlex는 어떤 컨텐츠를 볼 수 있나요?</h2><img src="./image/icon/bottomarrow.png" alt=""></div>
-
-                <p>Webflex만의 오리지널 시리즈웹툰, 다양한 태그와 장르별로 모아둔 컨텐츠, 그 외 유명 타 여러 작품을 구독 즉시 감상하실 수 있습니다.</p>
+                <div class="what">
+                    <h2>WebFlex는 어떤 컨텐츠를 볼 수 있나요?</h2>
+                    <img src="./images/icon/bottomarrow.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Webflex만의 오리지널 시리즈웹툰, 다양한 태그와 장르별로 모아둔 컨텐츠, 그 외 유명 타 여러 작품을 구독 즉시 감상하실 수 있습니다.</p>
+                </div>
                 </a>
-            <a a href="#" class="the"> 
-                <div class="what"><h2>WebFlex의 컨텐츠를 확실하게 즐기는 방법</h2><img src="./image/icon/bottomarrow.png" alt=""></div>
-
-                <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
-                </a>
+            <a href="#" class="the"> 
+                <div class="what">
+                    <h2>WebFlex의 컨텐츠를 확실하게 즐기는 방법</h2>
+                    <img src="./images/icon/bottomarrow.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
+                </div>
+            </a>
             <a href="#" class="webflex">
-                <div class="what"><h2>WebFlex는 얼마에 이용할 수 있나요?</h2><img src="./image/icon/bottomarrow.png" alt=""></div>
-
-                <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
-                </a>
+                <div class="what">
+                    <h2>WebFlex는 얼마에 이용할 수 있나요?</h2>
+                    <img src="./images/icon/bottomarrow.png" alt="">
+                </div>
+                <div class="box">
+                    <p>Webflex는 독점적인 오리지널 웹플렉스 전용 콘텐츠와 다양한 장르의 작품들을 새로운 형식으로 즐길 수 있는 곳입니다.</p>
+                </div>
+            </a>
             </div>
         </div>
-
-
-
-
+        
 
     </div>
 
+
+    <footer>
+
+    </footer>
 
 
 </body>
