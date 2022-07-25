@@ -21,35 +21,44 @@ $.ajax({
     
             if(k < 6){
             let tag=`<li>
+            <a href="${v.url}">
                 <img src="${v.img}" alt="">
                 <p>${v.title}</p>
+                </a>
             </li>`;
     
                     $('.list1').append(tag)
             }
             if(k > 6 &&k < 13){
                 let tag=`<li>
-                    <img src="${v.img}" alt="">
-                    <p>${v.title}</p>
-                </li>`;
+            <a href="${v.url}">
+                <img src="${v.img}" alt="">
+                <p>${v.title}</p>
+                </a>
+            </li>`;
                         $('.list2').append(tag)
             }
             if(k > 13 &&k < 20){
                 let tag=`<li>
-                    <img src="${v.img}" alt="">
-                    <p>${v.title}</p>
-                </li>`;
+            <a href="${v.url}">
+                <img src="${v.img}" alt="">
+                <p>${v.title}</p>
+                </a>
+            </li>`;
                         $('.list3').append(tag)
             }
             if(k > 20 &&k < 27){
                 let tag=`<li>
-                    <img src="${v.img}" alt="">
-                    <p>${v.title}</p>
-                </li>`;
+            <a href="${v.url}">
+                <img src="${v.img}" alt="">
+                <p>${v.title}</p>
+                </a>
+            </li>`;
                         $('.list4').append(tag)
             }
             
         })
+
     }
 })
 
@@ -100,8 +109,10 @@ $('.nav > li').each(function(k1,v1){
                         
                     if(k < 6){
                     tag +=`<li>
+                    <a href="${v.url}">
                         <img src="${v.img}" alt="">
                         <p>${v.title}</p>
+                        </a>
                     </li>`;
                             $(".list1").html(tag)
                             
@@ -109,23 +120,29 @@ $('.nav > li').each(function(k1,v1){
                     }
                     if(k > 6 &&k < 13){
                         tag1 +=`<li>
-                        <img src="${v.img}" alt="">
-                        <p>${v.title}</p>
-                    </li>`;
+                        <a href="${v.url}">
+                            <img src="${v.img}" alt="">
+                            <p>${v.title}</p>
+                            </a>
+                        </li>`;
                             $(".list2").html(tag1)
                     }
                     if(k > 13 &&k < 20){
                         tag2 +=`<li>
-                        <img src="${v.img}" alt="">
-                        <p>${v.title}</p>
-                    </li>`;
+                        <a href="${v.url}">
+                            <img src="${v.img}" alt="">
+                            <p>${v.title}</p>
+                            </a>
+                        </li>`;
                             $(".list3").html(tag2)
                     }
                     if(k > 20 &&k < 27){
                         tag3 +=`<li>
-                        <img src="${v.img}" alt="">
-                        <p>${v.title}</p>
-                    </li>`;
+                        <a href="${v.url}">
+                            <img src="${v.img}" alt="">
+                            <p>${v.title}</p>
+                            </a>
+                        </li>`;
                             $(".list4").html(tag3)
                     }
                 }

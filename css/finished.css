@@ -16,23 +16,24 @@ main > .nav > li {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 14.2%;
+  height: 50%;
   transition: 0.3s;
   cursor: pointer;
 }
 main > .nav > li.active {
   background-color: #fffc00;
 }
-main > .nav > li.active > span {
+main > .nav > li.active > p {
   color: #000;
 }
 main > .nav > li:hover {
   background-color: #fffc00;
 }
-main > .nav > li:hover > span {
+main > .nav > li:hover > p {
   color: #000;
 }
-main > .nav > li > span {
+main > .nav > li > p {
+  white-space: pre-line;
   font-size: 30px;
   color: #fff;
   transition: 0.3s;
@@ -62,13 +63,17 @@ main section .list > ul > li {
   height: 25.7vh;
   overflow: hidden;
 }
-main section .list > ul > li > img {
+main section .list > ul > li > a {
+  width: 100%;
+  height: 100%;
+}
+main section .list > ul > li > a > img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main section .list > ul > li > p {
+main section .list > ul > li > a > p {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -78,4 +83,4 @@ main section .list > ul > li > p {
   color: #fff;
   font-weight: 400;
   background-color: rgba(0, 0, 0, 0.6);
-}/*# sourceMappingURL=allcata.css.map */
+}/*# sourceMappingURL=finished.css.map */
