@@ -296,6 +296,17 @@ div.recommend div.recment a {
   border-radius: 15px;
   padding: 4px 30px;
   margin: 0 10px;
+  transition: 0.3s;
+}
+div.recommend div.recment a:hover {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000;
+}
+div.recommend div.recment a.active {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px #000;
 }
 
 div.firsttoonzip {

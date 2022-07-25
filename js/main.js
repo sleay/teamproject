@@ -4,7 +4,7 @@ let data='';
 let a = new Date();
 let day=a.getDay();
 
-
+$('header').load('inc.html header > div');
 
 $.ajax({
     

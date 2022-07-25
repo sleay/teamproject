@@ -86,7 +86,14 @@ $('.recment').on('click',function(){
 });
 key = 0;
 $('.acolor > a').each(function(k1,v1){
+
+
+    
+
+
     $(v1).on('click',function(){
+        $('.acolor > a').removeClass('active')
+    $('.acolor > a').eq(k1).addClass('active')
         key = k1;
         console.log(key)
         $.ajax({

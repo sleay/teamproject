@@ -277,6 +277,17 @@ div.recommend{
                 border-radius: 15px;
                 padding: 4px 30px;
                 margin: 0 10px;
+                transition: 0.3s;
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                    border: solid 1px #000
+                }
+                &.active{
+                    background-color: #fff;
+                    color: #000;
+                    border: solid 1px #000
+                }
             }
 }}
 

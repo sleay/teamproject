@@ -1,0 +1,89 @@
+@import url(./common.css);
+
+main{
+    position: relative;
+}
+
+.visual{
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+
+    }
+    >div{
+        width: 50%;
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateX(-50%);
+        color: #fff;
+        >p{
+            white-space: pre-line;
+            text-align: right;
+        }
+    }
+    .gradiant{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to bottom, #000,rgba(0,0,0,0));
+    }
+}
+
+section{
+    position: relative;
+    margin: 0 auto;
+    padding: 120px 130px;
+    width: 68.75%;
+    height: 100%;
+    background-image: url(../images/detailpage/back.png);
+    >ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        >li{
+            width: 380px;
+            height: 160px;
+            margin-bottom: 50px;
+            display: flex;
+            align-items: flex-end;
+            >div{
+                width: 280px;
+                height: 100%;
+               
+                >img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            >p{
+                white-space: pre-line;
+                width: 100px;
+                padding: 20px;
+                text-align: center;
+                color: #fff;
+            }
+        }
+        
+    }
+}
+.gradiant2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px !important;
+    background: linear-gradient(to top, #000,rgba(0,0,0,0));
+}
