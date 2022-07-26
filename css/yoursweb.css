@@ -42,6 +42,12 @@ div.sidebar div.btn:hover {
 div.sidebar div.btn:hover > a, div.sidebar div.btn:hover span {
   color: #000;
 }
+div.sidebar div.btn.active {
+  background-color: #fffc00;
+}
+div.sidebar div.btn.active > a, div.sidebar div.btn.active span {
+  color: #000;
+}
 
 div.all {
   width: 100%;

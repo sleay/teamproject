@@ -85,14 +85,125 @@ $('.trash').on('click',function(){
         });
     });
 
-
-
-  
-
-
-
-  
 });
 
 }
+
+
+$('.btn').each(function(k,v){
+    $(v).on('click',function(){
+
+        $('.btn').removeClass('active')
+            $('.btn').eq(k).addClass('active')
+ 
+
+
+    if(k==0){
+        $.ajax({
+    
+            url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
+            success:function(json){
+                let tag='';
+                let tag1='';
+                let tag2='';
+                let tag3='';
+                data=json;
+                console.log('ok')
+                $.each(data,function(k,v){
+            
+                    
+
+                        
+                    if(k < 6){
+                        tag+=`<li>
+                        <a href="${v.url}">
+                            <input type="checkbox" id="a${k}">
+                            <label for="a${k}"></label>
+                            <img src=${v.img} alt="item1">
+                            <p>${v.title}</p>
+                        </a>
+                    </li>`;
+                        
+                
+                                $('.list1').html(tag)
+                        }
+            
+                        if( k > 6 && k < 13){
+                            tag1+=`<li>
+                            <a href="${v.url}">
+                                <input type="checkbox" id="a${k}">
+                                <label for="a${k}"></label>
+                                <img src=${v.img} alt="item1">
+                                <p>${v.title}</p>
+                            </a>
+                        </li>`;
+                        $('.list2').html(tag1)
+                    }
+                    
+                    
+                    
+                }
+                )
+            }
+        })
+    }
+    else{
+        $.ajax({
+    
+            url:`https://korea-webtoon-api.herokuapp.com/all/week`,
+            success:function(json){
+                let tag='';
+                let tag1='';
+                let tag2='';
+                let tag3='';
+                data=json;
+                console.log('ok')
+                $.each(data,function(k,v){
+            
+                    
+
+                        
+                    if(k < 6){
+                        tag+=`<li>
+                        <a href="${v.url}">
+                            <input type="checkbox" id="a${k}">
+                            <label for="a${k}"></label>
+                            <img src=${v.img} alt="item1">
+                            <p>${v.title}</p>
+                        </a>
+                    </li>`;
+                        
+                
+                                $('.list1').html(tag)
+                        }
+            
+                        if( k > 6 && k < 13){
+                            tag1+=`<li>
+                            <a href="${v.url}">
+                                <input type="checkbox" id="a${k}">
+                                <label for="a${k}"></label>
+                                <img src=${v.img} alt="item1">
+                                <p>${v.title}</p>
+                            </a>
+                        </li>`;
+                        $('.list2').html(tag1)
+                    }
+                    
+                    
+                    
+                }
+                )
+            }
+        })
+
+
+
+    }
+});
+
+
+
+
+
+});
 

@@ -43,6 +43,12 @@ body{background-color: black;
                     color: #000;
                 }
             }
+            &.active{
+                background-color: #fffc00;
+                & >a,span{
+                    color: #000;
+                }
+            }
 
 
             }
