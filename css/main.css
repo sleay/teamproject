@@ -153,6 +153,10 @@
   transform: translateX(-150%);
 }
 
+.mySwiper4 > ul > li {
+  cursor: pointer;
+}
+
 .slide1 {
   position: relative;
   width: 100%;

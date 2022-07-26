@@ -70,7 +70,9 @@ $.ajax({
 
 
 
-
+$('.mySwiper4 > ul > li').on('click',function(){
+    location.href = './detailpage.html';
+});
         
 
 

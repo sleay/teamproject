@@ -165,7 +165,13 @@
         }
       }
       
-
+      .mySwiper4{
+        >ul{
+          >li{
+            cursor: pointer;
+          }
+        }
+      }
 
       // .left{
       //   position: absolute;
