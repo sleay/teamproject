@@ -48,7 +48,7 @@ header{
 }
 
 header > div{
-    padding: 40px 100px;
+    padding: 30px 100px;
     display: flex;
     justify-content: space-between;
 }
