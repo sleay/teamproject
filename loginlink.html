@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>webFlexlink</title>
     <link href="./css/loginlink.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+
+    <header style="position: absolute; top: 0; left: 0;">
+        <div>
+            <div>
+                <h1>
+                    <a href="./main.html"><img src="./images/logo.png"></a>
+                </h1>
+            </div>
+            <div class="icon">
+            </div>
+        </div>
+    </header>
+
+
     <div class="memberall">
 
         <div class="imgcolor">
@@ -21,7 +36,7 @@
     <div class="emaillogin">
         <p>이 메일로 가입하시겠습니까?</p>
         <input type="text" id="login" placeholder="이메일 주소">
-        <a href="#" class="btnfull">다음</a>
+        <a href="./member.html" class="btnfull">다음</a>
     </div>
 
     <div class="box">
@@ -41,7 +56,11 @@
     
 </div>
 </div>
+<footer>
 
-    
+</footer>
+    <script>
+        $('footer').load('inc.html footer > div');
+    </script>
 </body>
 </html>

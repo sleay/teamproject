@@ -175,7 +175,11 @@ let num=0;
 
     })
 
-
+$('.loginbutton > .btn').on('click',function(){
+    // if($('.loginbutton > .btn').value == typeof String){
+        location.href = './loginlink.html'
+    // }
+});
    
    
  

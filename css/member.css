@@ -20,14 +20,14 @@ div.memberall div.imgcolor {
 div.membox {
   width: 600px;
   color: white;
-  height: 700px;
+  height: 800px;
   padding: 30px 80px;
   background-color: #000;
-  border-radius: 12px;
+  border-radius: 15px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  top: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -50,6 +50,7 @@ div.membox div.email input {
   margin: 0 10px;
 }
 div.membox div.password p.passw {
+  margin-top: 20px;
   margin-bottom: 20px;
   text-indent: 13px;
 }
@@ -81,11 +82,37 @@ div.membox .passwordt input {
   margin: 0 10px;
 }
 div.membox div.checkbox {
-  margin: 20px 0;
+  margin: 40px 0 30px;
+  display: flex;
+  flex-direction: column;
 }
-div.membox div.memberinbox {
+div.membox div.checkbox > div {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+div.membox div.checkbox > div > input {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  margin-top: 1px;
+  border: solid 1px #707070;
+  border-radius: 5px;
+  background-color: #3d3d3d;
+  transition: 0.3s;
+}
+div.membox div.checkbox > div > input.active {
+  background-color: #fffc00;
+  border: solid 1px #fffc00;
+}
+div.membox div.checkbox > div > label {
+  width: 100%;
+  display: block;
+}
+div.membox .memberinbox {
+  white-space: pre-line;
   width: 400px;
-  height: 100px;
   font-size: 14px;
   border: 1px solid rgb(59, 59, 59);
   background-color: rgb(59, 59, 59);
@@ -102,6 +129,5 @@ div.membox a.btn {
   border: 1px solid #fffc00;
   background-color: #fffc00;
   border-radius: 15px;
-  padding: 12px 90px;
-  margin: 0 10px;
+  padding: 16px 0;
 }/*# sourceMappingURL=member.css.map */
