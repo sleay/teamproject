@@ -29,21 +29,21 @@
 
         <div class="membox">
             
-
+            <form action="./signup.html">
             <div class="email">
                 <p class="email">이메일</p>
                 <p>
-                    <input type="text" id="login" placeholder="이메일 주소">
+                    <input type="text" id="login" placeholder="이메일 주소" required>
                 </p>                    
             </div>
 
 
             <div class="password">
                 <p class="passw">비밀번호</p>
-                <input type="password" id="password" placeholder="비밀번호">
+                <input type="password" id="password" placeholder="비밀번호" required>
 
                 <div class="passwordt">
-                <input type="password" id="password" placeholder="비밀번호를 재입력해주세요">
+                <input type="password" id="password" placeholder="비밀번호를 재입력해주세요" required>
             </div> 
             
         </div>
@@ -78,8 +78,8 @@
                 명시된 대로 사용자 정보를 이용할 수 있습니다.
             </p>
 
-         <a href="./signup.html" class="btn">다음</a>
-
+         <input type="submit" class="btn" value="다음">
+        </form>
     </div>
 
 </div>
@@ -101,6 +101,7 @@
             });
         });
        
+        $('#login').val(localStorage.key1)
         
     </script>
 </body>
