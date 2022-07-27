@@ -418,39 +418,17 @@ div.webflexqna div.aqna a h2 {
 }
 div.webflexqna div.aqna a .box {
   height: 0px;
-  background-color: rgb(12, 0, 39);
-  display: none;
+  display: flex;
   align-items: center;
+  transition: 0.3s;
+}
+div.webflexqna div.aqna a .box.active {
+  height: 60px;
+}
+div.webflexqna div.aqna a .box.active > p {
+  display: block;
 }
 div.webflexqna div.aqna a .box p {
-  display: block;
+  display: none;
   width: 100%;
-}
-@-webkit-keyframes textani1 {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 60px;
-    display: flex;
-  }
-}
-@keyframes textani1 {
-  0% {
-    height: 0px;
-  }
-  100% {
-    height: 60px;
-    display: flex;
-  }
-}
-@keyframes textani1 {
-  0% {
-    height: 60px;
-    display: flex;
-  }
-  100% {
-    height: 0px;
-    display: none;
-  }
 }/*# sourceMappingURL=index.css.map */

@@ -12,9 +12,6 @@ $('.checkbox > div >input').on('click',function(){
 
 })
 
-$('.submit').on('click',function(){
-    location.href = 'main.html';
-});
 
 
 $('footer').load('inc.html footer > div');

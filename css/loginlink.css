@@ -33,18 +33,21 @@ div.middlebox {
   justify-content: space-around;
   align-items: center;
 }
-div.middlebox div.emaillogin {
+div.middlebox form {
+  width: 100%;
+}
+div.middlebox form div.emaillogin {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-div.middlebox div.emaillogin p {
+div.middlebox form div.emaillogin p {
   margin-bottom: 20px;
   font-weight: 700;
 }
-div.middlebox div.emaillogin input {
+div.middlebox form div.emaillogin input {
   width: 100%;
   color: white;
   font-size: 15px;
@@ -55,7 +58,7 @@ div.middlebox div.emaillogin input {
   padding: 20px 0px;
   text-indent: 25px;
 }
-div.middlebox a.btnfull {
+div.middlebox form div.emaillogin .btnfull {
   text-align: center;
   width: 100%;
   color: #000;
@@ -67,6 +70,8 @@ div.middlebox a.btnfull {
   padding: 15px;
   margin: 10px 0px;
   margin-top: 20px;
+  text-indent: 0px;
+  cursor: pointer;
 }
 div.middlebox .box {
   display: flex;
