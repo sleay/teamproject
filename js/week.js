@@ -1,5 +1,9 @@
 let a = new Date();
-let day=a.getDay();
+let day=a.getDay()-1;
+
+if(day==-1){
+    day=6;
+}
 
 
 
