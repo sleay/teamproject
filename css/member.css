@@ -120,7 +120,7 @@ div.membox .memberinbox {
   padding: 15px;
   margin-bottom: 20px;
 }
-div.membox a.btn {
+div.membox .btn {
   text-align: center;
   width: 400px;
   color: #000;
