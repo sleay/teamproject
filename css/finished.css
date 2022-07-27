@@ -1,0 +1,86 @@
+@import url(./common.css);
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+main > .nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  left: 0;
+  width: 150px;
+  height: calc(100vh - 100px);
+}
+main > .nav > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main > .nav > li.active {
+  background-color: #fffc00;
+}
+main > .nav > li.active > p {
+  color: #000;
+}
+main > .nav > li:hover {
+  background-color: #fffc00;
+}
+main > .nav > li:hover > p {
+  color: #000;
+}
+main > .nav > li > p {
+  white-space: pre-line;
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s;
+}
+main section {
+  width: 100%;
+}
+main section .bg {
+  width: 100%;
+}
+main section .bg > img {
+  width: 100%;
+}
+main section .list {
+  padding: 100px 60px;
+  margin-bottom: 80px;
+}
+main section .list > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+main section .list > ul > li {
+  position: relative;
+  width: 12.4%;
+  height: 25.7vh;
+  overflow: hidden;
+}
+main section .list > ul > li > a {
+  width: 100%;
+  height: 100%;
+}
+main section .list > ul > li > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section .list > ul > li > a > p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  color: #fff;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=finished.css.map */

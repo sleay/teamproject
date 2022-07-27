@@ -2,9 +2,16 @@ let data='';
 
 
 let a = new Date();
-let day=a.getDay();
+let day=a.getDay()-1;
+
+if(day==-1){
+    day=6;
+}
 
 
+
+
+$('header').load('inc.html header > div');
 
 $.ajax({
     
@@ -37,7 +44,7 @@ $.ajax({
 })
 $.ajax({
     
-    url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
+    url:`https://korea-webtoon-api.herokuapp.com/kakao-page/finished`,
     beforeSend:function(){
         console.log('bbb')
     },
@@ -69,6 +76,10 @@ $.ajax({
 })
 
 
+
+$('.mySwiper4 > ul > li').on('click',function(){
+    location.href = './detailpage.html';
+});
         
 
 

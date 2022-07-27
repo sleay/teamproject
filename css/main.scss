@@ -165,7 +165,13 @@
         }
       }
       
-
+      .mySwiper4{
+        >ul{
+          >li{
+            cursor: pointer;
+          }
+        }
+      }
 
       // .left{
       //   position: absolute;
@@ -460,4 +466,8 @@
 footer{
   position: absolute;
   bottom: 0;
+}
+
+.fp-watermark{
+  display: none;
 }

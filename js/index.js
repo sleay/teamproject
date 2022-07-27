@@ -1,4 +1,7 @@
 let data='';
+let num=0;
+let key = 0;
+let email='';
 
 $('footer').load('inc.html footer > div');
 
@@ -80,13 +83,21 @@ function imgwarp(){
         }
     });
 }
+
 imgwarp()
+
 $('.recment').on('click',function(){
     event.preventDefault();
 });
-key = 0;
+
+
 $('.acolor > a').each(function(k1,v1){
+
+
+
     $(v1).on('click',function(){
+        $('.acolor > a').removeClass('active')
+    $('.acolor > a').eq(k1).addClass('active')
         key = k1;
         console.log(key)
         $.ajax({
@@ -137,31 +148,23 @@ $('.acolor > a').each(function(k1,v1){
 
 
 
-
-
-
-
-let num=0;
-
     
     $('.aqna > a').each(function(k,v){
 
         $(v).on('click',function(){
             event.preventDefault();
 
+            if($('.box').eq(k).hasClass('active')){
+                $('.box').eq(k).removeClass('active');
+                $('.what > img').eq(k).css({transform:'rotate(0deg)'});
+            }
+            else{
+
+                $('.box').eq(k).addClass('active');
+                $('.what > img').eq(k).css({transform:'rotate(180deg)'});
+            }
 
 
-        if(num < 1){
-            num++;
-            $('.box').eq(k).css({display:'flex',height:'60px'})
-            $('div.what > img').eq(k).css({transform:'rotate(180deg)'})
-            // animation: textani1 0.3s forwards;
-        }
-        else if(num >=1){
-            num--;
-            $('div.what > img').eq(k).css({transform:'rotate(0deg)'})
-            $('.box').eq(k).css({display:'none',height:'0px'})
-        }
 
         console.log(num)
     });
@@ -169,6 +172,11 @@ let num=0;
     })
 
 
-   
-   
- 
+$('.email').bind('input',function(){
+    
+    email = $('.email').val();
+
+    
+    localStorage.setItem("key1",email)
+});
+

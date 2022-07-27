@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
     <link rel="stylesheet" href="./css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script defer src="./js/login.js"></script>
@@ -24,12 +24,13 @@
 
     <main>
         <div class="bg"></div>
+        <form action="main.html">
         <div class="login">
             <p>로그인</p>
             <div class="inputwarp">
-                <input type="text" placeholder="아이디를 입력해주세요">
-                <input type="password" placeholder="비밀번호를 입력해주세요">
-                <input type="button" value="로그인" class="submit">
+                <input type="text" placeholder="아이디를 입력해주세요" required>
+                <input type="password" placeholder="비밀번호를 입력해주세요" required>
+                <input type="submit" value="로그인" class="submit">
             </div>
             <div class="checkbox">
                 <div>
@@ -40,9 +41,10 @@
             </div>
             <div class="textbox">
                 <p>WebFlex 회원이 아니신가요?</p>
-                <a href="#">지금 가입하세요.</a>
+                <a href="./loginlink.html">지금 가입하세요.</a>
             </div>
         </div>
+    </form>
     </main>
 
 

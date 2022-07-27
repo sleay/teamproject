@@ -153,6 +153,10 @@
   transform: translateX(-150%);
 }
 
+.mySwiper4 > ul > li {
+  cursor: pointer;
+}
+
 .slide1 {
   position: relative;
   width: 100%;
@@ -390,4 +394,8 @@
 footer {
   position: absolute;
   bottom: 0;
+}
+
+.fp-watermark {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
