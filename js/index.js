@@ -3,6 +3,15 @@ let num=0;
 let key = 0;
 let email='';
 
+
+setTimeout(function(){
+    $('.intro').fadeOut();
+    $('body').css({overflow:'auto'})
+},4000,clearTimeout)
+
+
+
+
 $('footer').load('inc.html footer > div');
 
 
