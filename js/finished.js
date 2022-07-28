@@ -1,5 +1,12 @@
 
 
+
+
+$('header').load('inc.html header > div');
+$('footer').load('inc.html footer > div');
+
+
+
 $.ajax({
     
     url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
@@ -214,8 +221,3 @@ $('.nav > li').each(function(k1,v1){
 
 
 
-
-
-
-$('header').load('inc.html header > div');
-$('footer').load('inc.html footer > div');

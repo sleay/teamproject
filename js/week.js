@@ -1,10 +1,18 @@
+
+$('header').load('inc.html header > div');
+$('footer').load('inc.html footer > div');
+
+
+
+
+
+
 let a = new Date();
 let day=a.getDay()-1;
 
 if(day==-1){
     day=6;
 }
-
 
 
 
@@ -170,5 +178,3 @@ $('.nav > li').each(function(k1,v1){
 
 
 
-$('header').load('inc.html header > div');
-$('footer').load('inc.html footer > div');
