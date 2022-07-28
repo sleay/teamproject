@@ -62,6 +62,7 @@ main .warp .box3 {
   width: 100%;
 }
 main .warp .box3 > .title {
+  text-align: left;
   font-size: 24px;
   font-weight: 400;
   padding: 20px 0;
