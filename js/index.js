@@ -2,14 +2,34 @@ let data='';
 let num=0;
 let key = 0;
 let email='';
+  
+let cookieDate = new Date();
+
+cookieDate.setDate(
+    cookieDate.getDate()+1
+);
+
+
+
+
+    
+
 
 
 setTimeout(function(){
     $('.intro').fadeOut();
     $('body').css({overflow:'auto'})
+
+   
+    document.cookie = `key=value; expires=${cookieDate.toUTCString()}`;
+    
+
 },4000,clearTimeout)
 
-
+if(document.cookie=='key=value'){
+    $('.intro').css({display:'none'})
+    $('body').css({overflow:'auto'})
+}
 
 
 $('footer').load('inc.html footer > div');
