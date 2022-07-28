@@ -1,4 +1,5 @@
-@import url("./common.css");
+@import url(./common.css);
+@import url(./search.css);
 body {
   background-color: black;
   position: relative;
