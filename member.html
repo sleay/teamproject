@@ -102,6 +102,9 @@
         });
        
         $('#login').val(localStorage.key1)
+        $('.btn').on('click',function(){
+            localStorage.removeItem("key1");
+        });
         
     </script>
 </body>
