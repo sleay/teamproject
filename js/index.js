@@ -209,3 +209,15 @@ $('.email').bind('input',function(){
     localStorage.setItem("key1",email)
 });
 
+
+
+$('.insbtn').on('click',function(){
+    if($('.inspect').hasClass('active')){
+        $('.inspect').removeClass('active')
+    }
+    else{
+        $('.inspect').addClass('active')
+    }
+})
+
+

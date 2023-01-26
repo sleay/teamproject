@@ -130,7 +130,77 @@ body{
     }
 }
 
+div.inspect{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    &.active{
+        display: none;
+    }
+    >div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50%;
+        height: 50vh;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 20px;
+        display: flex;
+        >div{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // background-color: #ddd;
+            >img{
+                width: 100%;
+                border: #fff;
+                
+            }
+            button{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 30px;
+                height: 30px;
+                background-color: #000;
+                border: none;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                >span{
+                    color: #fff;
+                    font-size: 20px;
+                    line-height: 50px;
+                }
+            }
+            >p{
+                font-size: 20px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 400;
+                padding: 0 40px;
+                white-space: pre-line;
+                >a{
+                    font-size: 16px;
+                }
+            }
+        }
+       
 
+    }
+
+    
+
+
+}
 
 
 
