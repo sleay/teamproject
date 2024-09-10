@@ -29,7 +29,7 @@ setInterval(function(){
 
 $.ajax({
     
-    url:`https://korea-webtoon-api.herokuapp.com/all/week?day=${day}`,
+    url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/week?day=${day}`,
     beforeSend:function(){
         console.log('bbb')
     },
@@ -58,7 +58,7 @@ $.ajax({
 })
 $.ajax({
     
-    url:`https://korea-webtoon-api.herokuapp.com/kakao-page/finished`,
+    url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/kakao-page/finished`,
     beforeSend:function(){
         console.log('bbb')
     },
