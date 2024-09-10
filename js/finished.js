@@ -9,7 +9,7 @@ $('footer').load('inc.html footer > div');
 
 $.ajax({
     
-    url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
+    url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/finished`,
     beforeSend:function(){
         console.log('bbb')
     },
@@ -90,7 +90,7 @@ $('.nav > li').each(function(k1,v1){
         if(k1==0){
             $.ajax({
     
-                url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
+                url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/finished`,
                 success:function(json){
                     let tag='';
                     let tag1='';
@@ -150,7 +150,7 @@ $('.nav > li').each(function(k1,v1){
 
         $.ajax({
     
-            url:`https://korea-webtoon-api.herokuapp.com/all/finished`,
+            url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/finished`,
             success:function(json){
                 let tag='';
                 let tag1='';
