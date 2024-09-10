@@ -37,7 +37,7 @@ $('.searchpage > div > input').bind('input',function(){
   setTimeout(function(){
         $.ajax({
         
-        url:`https://korea-webtoon-api.herokuapp.com/search?keyword=${keyword}`,
+        url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/search?keyword=${keyword}`,
         beforeSend:function(){
             console.log('bbb')
         },
