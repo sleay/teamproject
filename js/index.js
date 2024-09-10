@@ -38,7 +38,7 @@ $('footer').load('inc.html footer > div');
 function imgwarp(){
     $.ajax({
     
-        url:`https://korea-webtoon-api.herokuapp.com/all/week?day=0`,
+        url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/week?day=0`,
         beforeSend:function(){
             console.log('bbb')
         },
@@ -63,7 +63,7 @@ function imgwarp(){
     })
     $.ajax({
         
-        url:`https://korea-webtoon-api.herokuapp.com/all/week?day=5`,
+        url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/week?day=5`,
         beforeSend:function(){
             console.log('bbb')
         },
@@ -88,7 +88,7 @@ function imgwarp(){
     })
     $.ajax({
         
-        url:`https://korea-webtoon-api.herokuapp.com/all/week?day=1`,
+        url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/week?day=1`,
         beforeSend:function(){
             console.log('bbb')
         },
@@ -131,7 +131,7 @@ $('.acolor > a').each(function(k1,v1){
         console.log(key)
         $.ajax({
     
-            url:`https://korea-webtoon-api.herokuapp.com/all/week?day=${key}`,
+            url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/all/week?day=${key}`,
             success:function(json){
                 let tag='';
                 let tag1='';
