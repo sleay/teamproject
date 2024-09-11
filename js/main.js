@@ -44,7 +44,7 @@ $.ajax({
             if(k < 21){
             let tag=`<li class="swiper-slide">
                         <a href="${v.url}">
-                            <img src="${v.img}" alt="">
+                            <img src="${v.thumbnail}" alt="">
                             <p>${v.title}</p>
                         </a>
                     </li>`;
