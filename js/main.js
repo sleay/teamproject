@@ -29,7 +29,7 @@ setInterval(function(){
 
 $.ajax({
     
-    url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/webtoons?updateDay=MON`,
+    url:`https://korea-webtoon-api-cc7dda2f0d77.herokuapp.com/webtoons?provider=NAVER&updateDay=MON`,
     beforeSend:function(){
         console.log('bbb')
     },
